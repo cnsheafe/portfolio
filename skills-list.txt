@@ -1,24 +1,31 @@
 Languages
 - C#
 - Javascript
+- Typescript
 - HTML
-- CSS
+- CSS/Sass
 - SQL
 - Python
 - C
 
 Databases
 - Postgres
+- MongoDb
 - Microsoft SQL Server
 
 Frameworks/Libraries
-- .NET/ASP.NET
+- .NET/ASP.NET/.NETCORE
+- Hangfire
+- Entity Framework/EF Core
+- NewtonSoft
 - Node.js
 - React
+- Redux
 - Vue
 - Bootstrap
 - JQuery
 - Chart.js
+- Google Charts
 
 DevOps
 - Docker
@@ -26,11 +33,18 @@ DevOps
 
 Other
 - Git
+- Unix commandline
+- Webpack
 - API Design
+- Server-side rendering
+- Systems Level Development
+- CDN Deployment
+- OO Principles
+- Software Patterns
 - AJAX
 - TDD/BDD/CI
 - Threading
 - Asynchronous Tasks
+- Algorithm Analysis and Data Structures
 - Integrated Testing
-- Webpack
 - Patience!
