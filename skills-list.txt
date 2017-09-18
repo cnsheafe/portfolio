@@ -1,0 +1,36 @@
+Languages
+- C#
+- Javascript
+- HTML
+- CSS
+- SQL
+- Python
+- C
+
+Databases
+- Postgres
+- Microsoft SQL Server
+
+Frameworks/Libraries
+- .NET/ASP.NET
+- Node.js
+- React
+- Vue
+- Bootstrap
+- JQuery
+- Chart.js
+
+DevOps
+- Docker
+- TravisCI
+
+Other
+- Git
+- API Design
+- AJAX
+- TDD/BDD/CI
+- Threading
+- Asynchronous Tasks
+- Integrated Testing
+- Webpack
+- Patience!
