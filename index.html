@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Domine|Gudea" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <ul>
+        <ul class="navbar">
             <li><a id="link-home" class="home-link">Home</a></li>
             <li><a id="link-projects" class="projects-link">Projects</a></li>
             <li><a href="http://github.com/cnsheafe" target="_blank">Github</a></li>
@@ -30,11 +30,40 @@
                 I am a full-stack developer primarily working with .NET and Node.js. I have experience with several frontend technologies including React, Redux, Vue, and JQuery. I have interests in Computer Networks, InfoSec, and Telecommunications.
             </p>
         </section>
-        <section id="projects">
+        <section id="projects" class="hide">
+            <div class="project-grid">
+                <div class="grid-item">
+                    <h4>
+                        <a href="https://stock-watcher-app.herokuapp.com">
+                        StockWatcher
+                        </a>
+                    </h4>
+                    <p>A full-stack web app for setting SMS alerts on stocks. Built on ASP.NET Core, Postgres, and React-Redux.
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <h4>
+                        <a href="https://pomodoro-time-keeper.herokuapp.com">
+                        Pomodoro Time
+                        </a>
+                    </h4>
+                    <p>A MEAN stack app for increasing productivity. </p>
+                </div>
+                <div class="grid-item">
+                    <h4>
+                        <a href="https://cnsheafe.github.io/spoon-n-drop/build/">
+                        Spoon 'n Drop</a>
+                    </h4>
+                    <p>Recipe search and store app using Dropbox and JQuery.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-
+        <section id="contact" class="hide">
+            <div class="info">
+                <p>Christofer Sheafe</p>
+                <p>cnsheafe@gmail.com</p>
+            </div>
         </section>
     </main>
 
