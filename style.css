@@ -1,0 +1,80 @@
+header {}
+
+.hide {
+    display: none;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+    padding-left: 0;
+    left: 10vw;
+    margin: auto;
+    font-family: "Gudea", sans-serif;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80vw;
+    font-family: "Gudea";
+    font-size: 18px;
+}
+
+.info p {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50vw;
+        margin: auto;
+        left: 0;
+    }
+    .project-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .grid-item {
+        width: 30%;
+    }
+}
+
+.home h1,
+.home h2,
+.home h3 {
+    font-family: "Domine", serif;
+}
+
+.home h1 {
+    font-size: 30px;
+}
+
+.home h2 {
+    font-size: 22px;
+}
+
+.home h3 {
+    font-size: 18px;
+}
+
+.home p {
+    font-family: "Gudea", sans-serif;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+}
