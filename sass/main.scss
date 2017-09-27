@@ -1,0 +1,56 @@
+@import "header";
+@import "projects";
+body {
+    background-color: #F1F3DB;
+}
+
+.hide {
+    display: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10vh;
+    width: 80vw;
+    font-family: "Gudea";
+    font-size: 22px;
+    @media screen and (min-width: 768px) {
+        margin-top: 20vh;
+    }
+    p {
+        margin: 0 auto;
+        text-align: center;
+    }
+    p:nth-child(2) {
+        margin-top: 30px;
+    }
+}
+
+.home {
+    font-family: "Domine", serif;
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-family: "Gudea", sans-serif;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+}
+
+main {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+    }
+}
