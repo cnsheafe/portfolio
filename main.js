@@ -1,3 +1,4 @@
+let homeLink = document.getElementById("link-home");
 let projectLink = document.getElementById("link-projects");
 let contactLink = document.getElementById("link-contact");
 let homePage = document.getElementById("home");
@@ -18,7 +19,7 @@ contactLink.addEventListener("click", event => {
     homePage.classList.add("hide");
 });
 
-homePage.addEventListener("click", event => {
+homeLink.addEventListener("click", event => {
     event.preventDefault();
     homePage.classList.remove("hide");
     contactPage.classList.add("hide");
