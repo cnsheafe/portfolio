@@ -80,6 +80,9 @@
       display: block; } }
   .gallery img {
     width: 100%; }
+  .gallery h4 {
+    font-family: "Domine", serif;
+    font-size: 18px; }
 
 .info {
   display: flex;
