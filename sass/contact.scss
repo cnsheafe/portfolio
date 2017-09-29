@@ -1,0 +1,18 @@
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 80vw;
+    font-family: "Gudea";
+    font-size: 22px;
+    p {
+        margin: 0;
+    }
+    p:nth-child(2) {
+        margin-top: 20px;
+    }
+    span {
+        font-style: italic;
+    }
+}
