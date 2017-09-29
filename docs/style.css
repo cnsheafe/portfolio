@@ -18,7 +18,7 @@
   .navbar a {
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer; }
     @media screen and (min-width: 768px) {
       .navbar a {
@@ -47,14 +47,13 @@
       margin-top: 0; } }
   .grid-item h4 {
     margin: 0;
-    margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #2C2727;
+    background-color: #46B29D;
     font-family: "Domine", serif;
     font-size: 18px;
     text-decoration: none;
-    color: #f1f3db; }
+    color: black; }
   .grid-item p {
     font-family: "Gudea", sans-serif;
     font-size: 14px;
@@ -74,15 +73,24 @@
     background-color: #c4c5b4; }
 
 .gallery {
-  display: none; }
+  display: none;
+  color: white; }
   @media screen and (min-width: 768px) {
     .gallery {
       display: block; } }
   .gallery img {
-    width: 100%; }
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer; }
+  .gallery img:hover {
+    border: 2px solid #de5b49; }
+  .gallery h3 {
+    font-family: "Domine", serif;
+    font-size: 22px; }
   .gallery h4 {
     font-family: "Domine", serif;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-bottom: 5px; }
 
 .info {
   display: flex;
@@ -90,7 +98,8 @@
   margin-top: 30px;
   width: 80vw;
   font-family: "Gudea";
-  font-size: 22px; }
+  font-size: 22px;
+  color: white; }
   .info p {
     margin: 0; }
   .info p:nth-child(2) {
@@ -99,7 +108,7 @@
     font-style: italic; }
 
 body {
-  background-color: #F1F3DB; }
+  background-color: #324d5c; }
 
 main {
   display: flex;
@@ -111,17 +120,20 @@ main {
       margin-top: 30px; } }
   main > h1 {
     font-family: "Domine", serif;
-    font-size: 30px; }
+    font-size: 30px;
+    color: white; }
 
 section h2 {
   font-family: "Domine", serif;
-  font-size: 22px; }
+  font-size: 22px;
+  color: white; }
 
 .hide {
   display: none; }
 
 .home {
-  font-family: "Domine", serif; }
+  font-family: "Domine", serif;
+  color: white; }
   .home h2 {
     font-size: 22px; }
   .home h3 {
@@ -129,6 +141,11 @@ section h2 {
   .home p {
     font-family: "Gudea", sans-serif;
     font-size: 18px;
+    margin-bottom: 0; }
+    @media screen and (min-width: 768px) {
+      .home p {
+        width: 50%; } }
+  .home p:first-child {
     margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */
