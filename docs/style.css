@@ -26,10 +26,6 @@
   .navbar a:hover {
     font-weight: bold; }
 
-@media screen and (min-width: 768px) {
-  #projects {
-    margin-top: 60px; } }
-
 .project-grid {
   display: flex;
   flex-direction: column; }
@@ -68,7 +64,7 @@
     font-weight: bold;
     width: 30%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-decoration: none;
     color: black;
     border: 3px solid black;
@@ -77,33 +73,52 @@
   .grid-item a:hover {
     background-color: #c4c5b4; }
 
-body {
-  background-color: #F1F3DB; }
-
-.hide {
+.gallery {
   display: none; }
+  @media screen and (min-width: 768px) {
+    .gallery {
+      display: block; } }
+  .gallery img {
+    width: 100%; }
 
 .info {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-top: 10vh;
+  margin-top: 30px;
   width: 80vw;
   font-family: "Gudea";
   font-size: 22px; }
-  @media screen and (min-width: 768px) {
-    .info {
-      margin-top: 20vh; } }
   .info p {
-    margin: 0 auto;
-    text-align: center; }
+    margin: 0; }
   .info p:nth-child(2) {
-    margin-top: 30px; }
+    margin-top: 20px; }
+  .info span {
+    font-style: italic; }
+
+body {
+  background-color: #F1F3DB; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto; }
+  @media screen and (min-width: 768px) {
+    main {
+      margin-top: 30px; } }
+  main > h1 {
+    font-family: "Domine", serif;
+    font-size: 30px; }
+
+section h2 {
+  font-family: "Domine", serif;
+  font-size: 22px; }
+
+.hide {
+  display: none; }
 
 .home {
   font-family: "Domine", serif; }
-  .home h1 {
-    font-size: 30px; }
   .home h2 {
     font-size: 22px; }
   .home h3 {
@@ -112,13 +127,5 @@ body {
     font-family: "Gudea", sans-serif;
     font-size: 18px;
     margin-top: 30px; }
-
-main {
-  display: flex;
-  width: 80vw;
-  margin: auto; }
-  @media screen and (min-width: 768px) {
-    main {
-      margin-top: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
