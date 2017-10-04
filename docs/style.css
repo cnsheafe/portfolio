@@ -4,7 +4,8 @@ header {
   font-family: "Domine", serif;
   z-index: 100;
   overflow: hidden; }
-  header h1, header h2 {
+  header h1,
+  header h2 {
     margin: 0; }
 
 header:before {
@@ -19,7 +20,8 @@ header:before {
   z-index: 96;
   position: relative;
   top: 40px; }
-  .banner h1, .banner h2 {
+  .banner h1,
+  .banner h2 {
     position: relative;
     top: 40px;
     color: black;
@@ -55,7 +57,8 @@ header:before {
     margin-right: 20px; }
   .navbar li:last-child {
     margin-right: 0; }
-  .navbar i, .navbar img {
+  .navbar i,
+  .navbar img {
     vertical-align: bottom; }
   .navbar i:after {
     content: "";
@@ -63,17 +66,50 @@ header:before {
   .navbar i:first-child {
     margin-right: 0; }
   .navbar i:nth-child(2):after {
-    margin-right: 5px; }
+    margin-right: 8px; }
   .navbar i:nth-child(3):after {
     margin-right: 10px; }
   .navbar a {
     color: black;
     text-decoration: none;
-    opacity: 0.85; }
+    opacity: 0.85;
+    font-size: 18px; }
   .navbar a:nth-child(2) {
     text-decoration: underline; }
   .navbar a:hover {
     opacity: 1; }
+  @media screen and (min-height: 576px) {
+    .navbar {
+      flex-direction: column; }
+      .navbar li {
+        margin-bottom: 40px;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        line-height: 210%; }
+      .navbar li:nth-child(2) {
+        line-height: 150%; }
+      .navbar i {
+        font-size: 44px; }
+      .navbar img {
+        width: 38px; }
+      .navbar a {
+        font-size: 24px; } }
+  @media screen and (min-height: 576px) and (min-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      margin-top: 40vh; }
+      .navbar li {
+        margin-right: 100px;
+        line-height: 250%; }
+      .navbar li:nth-child(2) {
+        line-height: 220%; }
+      .navbar i {
+        font-size: 64px; }
+      .navbar img {
+        width: 60px; }
+      .navbar a {
+        font-size: 36px; } }
 
 .project-grid {
   display: flex;
