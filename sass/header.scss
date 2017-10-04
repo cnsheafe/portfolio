@@ -1,11 +1,11 @@
 @import "colors";
 @import "fonts";
-
 header {
     position: relative;
     height: 100vh;
     font-family: $serif, serif;
-    h1,h2 {
+    h1,
+    h2 {
         margin: 0;
     }
     z-index: 100;
@@ -25,7 +25,8 @@ header:before {
     z-index: 96;
     position: relative;
     top: 40px;
-    h1, h2 {
+    h1,
+    h2 {
         position: relative;
         top: 40px;
         color: black;
@@ -35,7 +36,6 @@ header:before {
         text-align: center;
         opacity: 1;
     }
-
     h1 {
         border-top: 4px solid black;
         border-left: 4px solid black;
@@ -49,6 +49,7 @@ header:before {
         padding-bottom: 10px;
     }
 }
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -57,7 +58,6 @@ header:before {
     padding-left: 0;
     justify-content: center;
     list-style: none;
-
     img {
         width: 24px;
     }
@@ -69,7 +69,8 @@ header:before {
     li:last-child {
         margin-right: 0;
     }
-    i, img {
+    i,
+    img {
         vertical-align: bottom;
     }
     i:after {
@@ -80,7 +81,7 @@ header:before {
         margin-right: 0;
     }
     i:nth-child(2):after {
-        margin-right: 5px;
+        margin-right: 8px;
     }
     i:nth-child(3):after {
         margin-right: 10px;
@@ -89,16 +90,57 @@ header:before {
         color: black;
         text-decoration: none;
         opacity: 0.85;
+        font-size: 18px;
     }
     a:nth-child(2) {
         text-decoration: underline;
     }
-
     a:hover {
         opacity: 1;
     }
-
-
+    @media screen and (min-height: 576px) {
+        flex-direction: column;
+        li {
+            margin-bottom: 40px;
+            margin-right: 0;
+            display: flex;
+            justify-content: center;
+            line-height: 210%;
+        }
+        li:nth-child(2) {
+            line-height: 150%;
+        }
+        i {
+            font-size: 44px;
+        }
+        img {
+            width: 38px;
+        }
+        a {
+            font-size: 24px;
+        }
+        span {}
+    }
+    @media screen and (min-height: 576px) and (min-width: 768px) {
+        flex-direction: row;
+        margin-top: 40vh;
+        li {
+            margin-right: 100px;
+            line-height: 250%;
+        }
+        li:nth-child(2) {
+            line-height: 220%;
+        }
+        i {
+            font-size: 64px;
+        }
+        img {
+            width: 60px;
+        }
+        a {
+            font-size: 36px;
+        }
+    }
 }
 
 // .navbar {
@@ -121,7 +163,6 @@ header:before {
 //     a {
 //         font-size: 18px;
 //         text-decoration: none;
-
 //         color: white;
 //         cursor: pointer;
 //         @media screen and (min-width: 768px) {
