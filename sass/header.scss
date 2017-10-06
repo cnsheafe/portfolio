@@ -10,6 +10,13 @@ header {
     }
     z-index: 100;
     overflow: hidden;
+    >div:last-child {
+        font-family: $sans-serif, sans-serif;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        z-index: 200;
+    }
 }
 
 header:before {

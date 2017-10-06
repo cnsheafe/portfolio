@@ -7,6 +7,12 @@ header {
   header h1,
   header h2 {
     margin: 0; }
+  header > div:last-child {
+    font-family: "Gudea", sans-serif;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 200; }
 
 header:before {
   z-index: 95;
