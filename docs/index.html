@@ -21,13 +21,13 @@
         <nav>
             <ul id="links" class="navbar" role="navigation">
                 <li>
-                    <a id="link-about" href="">
+                    <a id="link-about" href="#about">
                         <i class="material-icons">person</i>
                         <span>About</span>
                     </a>
                 </li>
                 <li>
-                    <a id="link-projects" href="">
+                    <a id="link-projects" href="#projects">
                         <i class="material-icons">build</i>
                         <span>Projects</span>
                     </a>
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li>
-                    <a id="link-contact" href="">
+                    <a id="link-contact" href="#contact">
                         <i class="material-icons">contact_mail</i>
                         <span>Contact</span>
                     </a>
@@ -47,26 +47,34 @@
             </ul>
         </nav>
         <div role="button" class="scroll-button">
-            <a href="">
+            <a href="#about">
                 <i class="material-icons">arrow_drop_down_circle</i>
             </a>
         </div>
     </header>
 
-    <main role="main">
-        <h1>Christofer Sheafe, MSEE</h1>
-        <section id="home" class="home">
-            <h2>Software Developer Based in Colorado Springs, CO</h2>
-            <p>
-                I am a full-stack developer primarily working with .NET and Node.js.
-            </p>
-            <p>
-                React, Redux, Vue, and JQuery are a few front-end technologies I enjoy working with.
-            </p>
-            <p>
-                My interests include Computer Networking, InfoSec, and Statistics.
-            </p>
-
+    <main> 
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div role="separator">
+                <div role="textbox">
+                    <p>
+                        I am a full-stack developer primarily working with .NET and Node.js.
+                    </p>
+                    <p>
+                        React, Redux, Vue, and AJAX are a few front-end technologies I enjoy working with.
+                    </p>
+                    <p>
+                        My interests include computer networking, InfoSec, and statistics.
+                    </p>
+                    <p>
+                        When I'm not writing software I like to cook, read, and play video games.
+                    </p>
+                </div>
+                <div role="img">
+                    <img src="assets/portfolio-photo.jpg" alt="Picture of Me">
+                </div>
+            </div>
         </section>
         <section id="projects" class="projects">
             <h2>Projects</h2>
@@ -77,22 +85,32 @@
                     </h4>
                     <p>A full-stack web app for setting SMS alerts on stocks. Built on ASP.NET Core, Postgres, and React-Redux.
                     </p>
-                    <a href="https://cnsheafe.github.io/StockWatcher-Client/" target="_blank">Check it Out!</a>
+                    <div>
+                        <a href="https://cnsheafe.github.io/StockWatcher-Client/" target="_blank">Demo</a>
+                        <a href="https://github.com/cnsheafe/StockWatcher" target="_blank">Repo</a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <h4>
                         Pomodoro Time
                     </h4>
                     <p>A MEAN stack app for increasing productivity using the Pomodoro Technique. </p>
-                    <a href="https://pomodoro-time-keeper.herokuapp.com" target="_blank">Click Me!</a>
+                    <div>
+                        <a href="https://pomodoro-time-keeper.herokuapp.com" target="_blank">Demo</a>
+                        <a href="https://github.com/cnsheafe/pomodoro-time" target="_blank">Repo</a>
+                    </div>
+
                 </div>
                 <div class="grid-item">
                     <h4>
                         Spoon 'n Drop
                     </h4>
                     <p>Recipe search and store app using Dropbox and JQuery.</p>
-                    <a href="https://cnsheafe.github.io/spoon-n-drop/build/" target="_blank">Try It!</a>
-                </div>
+                    <div>
+                        <a href="https://cnsheafe.github.io/spoon-n-drop/build/" target="_blank">Demo</a>
+                        <a href="https://github.com/cnsheafe/spoon-n-drop" target="_blank">Repo</a>
+                    </div>
+               </div>
             </div>
             <div class="gallery">
                 <h3>Gallery</h3>
@@ -118,7 +136,7 @@
 
         </section>
 
-        <section id="contact" class="hide">
+        <section id="contact" class="contact">
             <h2>Contact Info</h2>
             <div class="info">
                 <p>For opportunities, collaborations, or other inquiries contact me at: </p>
