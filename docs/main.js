@@ -1,22 +1,19 @@
-let homeLink = document.getElementById("link-home");
-let contactLink = document.getElementById("link-contact");
-let homePage = document.getElementById("home");
-let projectSection = document.getElementById("projects");
-let contactPage = document.getElementById("contact");
+const aboutLink = document.getElementById("link-about");
+const projectsLink = document.getElementById("link-projects");
+const contactLink = document.getElementById("link-contact");
 
+const nav = document.getElementsByTagName("NAV")[0];
+const navBar = document.getElementById("links");
 
-contactLink.addEventListener("click", event => {
-    event.preventDefault();
-    contactPage.classList.remove("hide");
+window.addEventListener("scroll", event => {
+    if(window.scrollY >= window.innerHeight) {
+        nav.classList.add("nav-fixed");
+        navBar.classList.remove("navbar");
+        navBar.classList.add("navbar-fixed");
 
-    projectSection.classList.add("hide");
-    homePage.classList.add("hide");
-});
-
-homeLink.addEventListener("click", event => {
-    event.preventDefault();
-    homePage.classList.remove("hide");
-    projectSection.classList.remove("hide");
-
-    contactPage.classList.add("hide");
-});
+        navBar.querySelectorAll("i").forEach(icons => {
+            icons.classList.add("hide");
+        });
+        navBar.querySelector("img").classList.add("hide");
+    }
+})
