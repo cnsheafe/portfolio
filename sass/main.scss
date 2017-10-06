@@ -1,56 +1,36 @@
 @import "header";
+@import "about";
 @import "projects";
 @import "contact";
 @import "colors";
 
 body {
-    background-color: $flat-dark-blue;
+    scroll-behavior: smooth;
+    background-color: $fancy-white;
 }
-
 main {
     display: flex;
     flex-direction: column;
     width: 80vw;
     margin: auto;
-    @media screen and (min-width: 768px) {
-        margin-top: 30px;
-    }
     > h1 {
     font-family: "Domine", serif;
     font-size: 30px;
-    color: white;
     }
 }
 
 section h2 {
     font-family: "Domine", serif;
     font-size: 22px;
-    color: white;
+    color: black;
+    margin-top: 70px;
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
 }
 
 .hide {
     display: none;
 }
 
-.home {
-    font-family: "Domine", serif;
-    color: white;
-    h2 {
-        font-size: 22px;
-    }
-    h3 {
-        font-size: 18px;
-    }
-    p {
-        font-family: "Gudea", sans-serif;
-        font-size: 18px;
-        margin-bottom: 0;
-        @media screen and (min-width: 768px) {
-            width: 50%;
-        }
-    }
-    p:first-child {
-        margin-top: 30px;
-    }
-}
 

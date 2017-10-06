@@ -6,33 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Domine|Gudea" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <ul class="navbar" role="navigation">
-            <li><a id="link-home" href="" class="home-link">Home</a></li>
-            <li><a href="http://github.com/cnsheafe" target="_blank">Github</a></li>
-            <li><a id="link-contact" href="" class="contact-link">Contact</a></li>
-        </ul>
+        <div role="banner" class="banner">
+            <h1>Christofer Sheafe</h1>
+            <h2>Software Developer Based in Colorado Springs, CO</h2>
+        </div>
+        <nav>
+            <ul id="links" class="navbar" role="navigation">
+                <li>
+                    <a id="link-about" href="#about">
+                        <i class="material-icons">person</i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="link-projects" href="#projects">
+                        <i class="material-icons">build</i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://github.com/cnsheafe" target="_blank">
+                        <img src="assets/github-mark.png" alt="Github Mark">
+                        <span>Github</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="link-contact" href="#contact">
+                        <i class="material-icons">contact_mail</i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div role="button" class="scroll-button">
+            <a href="#about">
+                <i class="material-icons">arrow_drop_down_circle</i>
+            </a>
+        </div>
     </header>
 
-    <main role="main">
-        <h1>Christofer Sheafe, MSEE</h1>
-        <section id="home" class="home">
-            <h2>Software Developer Based in Colorado Springs, CO</h2>
-            <p>
-                I am a full-stack developer primarily working with .NET and Node.js. 
-            </p>
-            <p>
-                React, Redux, Vue, and JQuery are a few front-end technologies I enjoy working with.
-            </p>
-            <p>
-                My interests include Computer Networking, InfoSec, and Statistics.
-            </p>
-
+    <main> 
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div role="separator">
+                <div role="textbox">
+                    <p>
+                        I am a full-stack developer primarily working with .NET and Node.js.
+                    </p>
+                    <p>
+                        React, Redux, Vue, and AJAX are a few front-end technologies I enjoy working with.
+                    </p>
+                    <p>
+                        My interests include computer networking, InfoSec, and statistics.
+                    </p>
+                    <p>
+                        When I'm not writing software I like to cook, read, and play video games.
+                    </p>
+                </div>
+                <div role="img">
+                    <img src="assets/portfolio-photo.jpg" alt="Picture of Me">
+                </div>
+            </div>
         </section>
         <section id="projects" class="projects">
             <h2>Projects</h2>
@@ -43,60 +85,58 @@
                     </h4>
                     <p>A full-stack web app for setting SMS alerts on stocks. Built on ASP.NET Core, Postgres, and React-Redux.
                     </p>
-                    <a href="https://cnsheafe.github.io/StockWatcher-Client/" target="_blank">Check it Out!</a>
+                    <div>
+                        <a href="https://cnsheafe.github.io/StockWatcher-Client/" target="_blank">Demo</a>
+                        <a href="https://github.com/cnsheafe/StockWatcher" target="_blank">Repo</a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <h4>
                         Pomodoro Time
                     </h4>
                     <p>A MEAN stack app for increasing productivity using the Pomodoro Technique. </p>
-                    <a href="https://pomodoro-time-keeper.herokuapp.com" target="_blank">Click Me!</a>
+                    <div>
+                        <a href="https://pomodoro-time-keeper.herokuapp.com" target="_blank">Demo</a>
+                        <a href="https://github.com/cnsheafe/pomodoro-time" target="_blank">Repo</a>
+                    </div>
+
                 </div>
                 <div class="grid-item">
                     <h4>
                         Spoon 'n Drop
                     </h4>
                     <p>Recipe search and store app using Dropbox and JQuery.</p>
-                    <a href="https://cnsheafe.github.io/spoon-n-drop/build/" target="_blank">Try It!</a>
-                </div>
+                    <div>
+                        <a href="https://cnsheafe.github.io/spoon-n-drop/build/" target="_blank">Demo</a>
+                        <a href="https://github.com/cnsheafe/spoon-n-drop" target="_blank">Repo</a>
+                    </div>
+               </div>
             </div>
             <div class="gallery">
                 <h3>Gallery</h3>
                 <div>
                     <h4>StockWatcher</h4>
-                    <a 
-                        href="https://cnsheafe.github.io/StockWatcher-Client/"
-                        target="_blank">
-                        <img 
-                            src="assets/stock.png" 
-                            alt="Screenshot of StockWatcher displaying graph">
+                    <a href="https://cnsheafe.github.io/StockWatcher-Client/" target="_blank">
+                        <img src="assets/stock.png" alt="Screenshot of StockWatcher displaying graph">
                     </a>
                 </div>
                 <div>
                     <h4>Pomodoro Time</h4>
-                    <a 
-                        href="https://pomodoro-time-keeper.herokuapp.com" 
-                        target="_blank">
-                        <img 
-                            src="assets/pomodoro.png" 
-                            alt="Screenshot of Pomodoro timer counting down">
+                    <a href="https://pomodoro-time-keeper.herokuapp.com" target="_blank">
+                        <img src="assets/pomodoro.png" alt="Screenshot of Pomodoro timer counting down">
                     </a>
                 </div>
                 <div>
                     <h4>Spoon 'n Drop</h4>
-                    <a 
-                        href="https://cnsheafe.github.io/spoon-n-drop/build/" 
-                        target="_blank">
-                        <img 
-                            src="assets/spoon.png" 
-                            alt="Screenshot of Spoon 'n Drop displaying recipes">
+                    <a href="https://cnsheafe.github.io/spoon-n-drop/build/" target="_blank">
+                        <img src="assets/spoon.png" alt="Screenshot of Spoon 'n Drop displaying recipes">
                     </a>
                 </div>
             </div>
 
         </section>
 
-        <section id="contact" class="hide">
+        <section id="contact" class="contact">
             <h2>Contact Info</h2>
             <div class="info">
                 <p>For opportunities, collaborations, or other inquiries contact me at: </p>
