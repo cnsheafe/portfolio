@@ -19,14 +19,15 @@ header:before {
 .banner {
   z-index: 96;
   position: relative;
-  top: 40px; }
+  top: 40px;
+  width: 80%;
+  margin: auto; }
   .banner h1,
   .banner h2 {
     position: relative;
     top: 40px;
     color: black;
     margin-bottom: 15px;
-    width: 80%;
     margin: auto;
     text-align: center;
     opacity: 1; }
@@ -65,11 +66,13 @@ header:before {
 .navbar {
   display: flex;
   flex-direction: row;
+  margin: auto;
   margin-top: 100px;
   font-family: "Gudea", sans-serif;
   padding-left: 0;
-  justify-content: center;
-  list-style: none; }
+  justify-content: space-around;
+  list-style: none;
+  width: 90%; }
   .navbar li {
     z-index: 97;
     opacity: 1;
@@ -86,7 +89,7 @@ header:before {
     font-size: 28px;
     vertical-align: bottom; }
   .navbar i, .navbar img {
-    margin-right: 5px; }
+    margin-right: 10px; }
   .navbar a {
     color: black;
     text-decoration: none;
@@ -99,8 +102,10 @@ header:before {
       margin-top: 30px; } }
   @media screen and (min-height: 768px) {
     .navbar {
+      margin: auto;
       margin-top: 20vh;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: space-between; }
       .navbar li {
         margin-bottom: 40px;
         margin-right: 0;
@@ -108,23 +113,21 @@ header:before {
         justify-content: center;
         line-height: 210%; }
       .navbar i {
-        font-size: 44px;
-        margin-right: 20px; }
+        font-size: 44px; }
       .navbar img {
-        width: 40px;
-        margin-right: 24px; }
+        width: 40px; }
       .navbar a {
         font-size: 24px;
-        width: 150px; } }
-  @media screen and (min-height: 768px) and (min-width: 768px) {
+        width: 140px; } }
+  @media screen and (min-width: 768px) {
     .navbar {
       flex-direction: row;
-      margin-top: 30vh; }
+      margin: auto;
+      margin-top: 30vh;
+      width: 90%; }
       .navbar li {
-        margin-right: 50px;
+        margin-right: 40px;
         line-height: 250%; }
-      .navbar li:nth-child(3) a {
-        line-height: 170%; }
       .navbar li:last-child {
         margin-right: 0; }
       .navbar i {
@@ -133,6 +136,9 @@ header:before {
         width: 60px; }
       .navbar a {
         font-size: 36px; } }
+  @media screen and (min-width: 992px) {
+    .navbar {
+      width: 80%; } }
 
 @keyframes oscillate {
   0% {
@@ -163,9 +169,69 @@ header:before {
       .scroll-button i {
         font-size: 72px; } }
 
+.nav-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: black;
+  z-index: 250; }
+
+.navbar-fixed {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  justify-content: space-around;
+  list-style: none; }
+  .navbar-fixed li {
+    margin-right: 20px; }
+  .navbar-fixed a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8; }
+  .navbar-fixed a:hover {
+    opacity: 1; }
+
+.about {
+  font-family: "Domine", serif;
+  color: black; }
+  .about > div {
+    display: flex;
+    flex-direction: column; }
+    .about > div div:first-child {
+      margin-bottom: 30px; }
+  .about h2 {
+    margin-bottom: 0; }
+  .about h3 {
+    font-size: 18px; }
+  .about p {
+    font-family: "Gudea", sans-serif;
+    font-size: 18px;
+    margin-bottom: 0; }
+  .about p:first-child {
+    margin-top: 30px; }
+  .about img {
+    display: none;
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    .about > div {
+      flex-direction: row;
+      justify-content: space-between; }
+      .about > div div {
+        width: 45%;
+        height: 50%; }
+    .about img {
+      display: block;
+      border: 1px solid black;
+      border-radius: 25px;
+      width: 100%; }
+    .about p {
+      font-size: 22px; } }
+
 .project-grid {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px; }
   @media screen and (min-width: 768px) {
     .project-grid {
       flex-direction: row;
@@ -177,7 +243,7 @@ header:before {
   flex-direction: column;
   background-color: white;
   text-align: center;
-  margin-top: 30px; }
+  height: 100%; }
   @media screen and (min-width: 768px) {
     .grid-item {
       width: 30%;
@@ -186,7 +252,7 @@ header:before {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #46B29D;
+    background-color: #CFDADC;
     font-family: "Domine", serif;
     font-size: 18px;
     text-decoration: none;
@@ -195,32 +261,33 @@ header:before {
     font-family: "Gudea", sans-serif;
     font-size: 14px;
     padding: 0 10px; }
+  .grid-item div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
   .grid-item a {
     font-family: "Gudea", sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     width: 30%;
     margin: auto;
-    margin-bottom: 30px;
     text-decoration: none;
     color: black;
     border: 3px solid black;
     border-radius: 8px;
     padding: 5px; }
   .grid-item a:hover {
-    background-color: #c4c5b4; }
+    background-color: #CFDADC; }
 
 .gallery {
   display: none;
-  color: white; }
-  @media screen and (min-width: 768px) {
-    .gallery {
-      display: block; } }
+  margin-bottom: 30px; }
   .gallery img {
     width: 100%;
     box-sizing: border-box;
-    cursor: pointer; }
+    cursor: pointer;
+    border: 2px solid #CFDADC; }
   .gallery img:hover {
-    border: 2px solid #de5b49; }
+    border-color: black; }
   .gallery h3 {
     font-family: "Domine", serif;
     font-size: 22px; }
@@ -228,15 +295,18 @@ header:before {
     font-family: "Domine", serif;
     font-size: 18px;
     margin-bottom: 5px; }
+  @media screen and (min-width: 768px) {
+    .gallery {
+      display: block; } }
 
 .info {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   width: 80vw;
+  height: 100vh;
   font-family: "Gudea";
-  font-size: 22px;
-  color: white; }
+  font-size: 22px; }
   .info p {
     margin: 0; }
   .info p:nth-child(2) {
@@ -244,42 +314,29 @@ header:before {
   .info span {
     font-style: italic; }
 
+body {
+  scroll-behavior: smooth;
+  background-color: #F1FBFF; }
+
 main {
   display: flex;
   flex-direction: column;
   width: 80vw;
   margin: auto; }
-  @media screen and (min-width: 768px) {
-    main {
-      margin-top: 30px; } }
   main > h1 {
     font-family: "Domine", serif;
-    font-size: 30px;
-    color: white; }
+    font-size: 30px; }
 
 section h2 {
   font-family: "Domine", serif;
   font-size: 22px;
-  color: white; }
+  color: black;
+  margin-top: 70px; }
+  @media screen and (min-width: 768px) {
+    section h2 {
+      font-size: 26px; } }
 
 .hide {
   display: none; }
-
-.home {
-  font-family: "Domine", serif;
-  color: white; }
-  .home h2 {
-    font-size: 22px; }
-  .home h3 {
-    font-size: 18px; }
-  .home p {
-    font-family: "Gudea", sans-serif;
-    font-size: 18px;
-    margin-bottom: 0; }
-    @media screen and (min-width: 768px) {
-      .home p {
-        width: 50%; } }
-  .home p:first-child {
-    margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */
