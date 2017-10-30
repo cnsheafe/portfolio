@@ -1,86 +1,76 @@
-
-.project-grid {
+.project-item {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin-bottom: 30px;
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-between;
+    img {
+        width:100%;
+        height: 100%;
     }
 }
 
-.grid-item {
+.project-bio {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    background-color: white;
-    text-align: center;
+    background-color: $dark-blue;
     height: 100%;
+    margin-bottom: 0;
+    width: 100%;
+    color: white;
     @media screen and (min-width: 768px) {
-        width: 30%;
         margin-top: 0;
+        width: 35%;
     }
     h4 {
         margin: 0;
         padding-top: 10px;
         padding-bottom: 10px;
-        background-color: $primary-blue;
+        background-color: $even-darker-blue;
         font-family: "Domine", serif;
         font-size: 18px;
         text-decoration: none;
-        color: black;
+        text-align: center;
+        color: white;
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
     }
     p {
         font-family: "Gudea", sans-serif;
-        font-size: 14px;
+        font-size: 18px;
         padding: 0 10px;
     }
-    div {
+    ul {
+        list-style: none;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        padding-left: 0;
+        margin: 0;
     }
+    li {
+        flex-grow: 1;
+        height: 100%;
+        background-color: $primary-blue;
+    }
+    li:first-child {
+        border-right: 1px inset black;
+    }
+
     a {
         font-family: "Gudea", sans-serif;
         font-weight: normal;
-        width: 30%;
-        margin: auto;
+        font-size: 20px;
         text-decoration: none;
+        display: block;
+        text-align: center;
         color: black;
-        border: 3px solid black;
-        border-radius: 8px;
-        padding: 5px;
+        padding: 10px 0;
     }
     a:hover {
-        background-color: $primary-blue;
+        background-color: $highlight-blue;
     }
 }
-
-.gallery {
+.project-snapshot {
     display: none;
-    margin-bottom: 30px;
-    img {
-        width: 100%;
-        box-sizing: border-box;
-        cursor: pointer;
-        border: 2px solid $primary-blue;
-    }
-    img:hover {
-        border-color: black;
-
-    }
-
-    h3 {
-        font-family: "Domine", serif;
-        font-size: 22px;
-    }
-    h4 { 
-        font-family: "Domine", serif; 
-        font-size: 18px; 
-        margin-bottom: 5px;
-    }
-    @media screen and (min-width:768px) {
+    width: 65%;
+    @media screen and (min-width: 768px) {
         display: block;
     }
 }

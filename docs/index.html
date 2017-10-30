@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4="
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Domine|Gudea" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -51,15 +52,14 @@
                 <i class="material-icons">arrow_drop_down_circle</i>
             </a>
         </div>
-        <div role="note">Background: 
-            <a href="https://www.vexels.com/vectors/preview/144775/winter-mountain-landscape-illustration"
-                target="_blank">
-                Winter Mountain Landscape Illustration 
+        <div role="note">Background:
+            <a href="https://www.vexels.com/vectors/preview/144775/winter-mountain-landscape-illustration" target="_blank">
+                Winter Mountain Landscape Illustration
             </a>| Designed by Vexels</div>
 
     </header>
 
-    <main> 
+    <main>
         <section id="about" class="about">
             <h2>About Me</h2>
             <div role="separator">
@@ -84,70 +84,79 @@
         </section>
         <section id="projects" class="projects">
             <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="grid-item">
-                    <h4>
-                        StockWatcher
-                    </h4>
-                    <p>A full-stack web app for setting SMS alerts on stocks. Built on ASP.NET Core, Postgres, and React-Redux. Uses Twilio and Alphavantage APIs.
-                    </p>
-                    <div>
-                        <a href="https://cnsheafe.github.io/StockWatcher-Client/" target="_blank">Demo</a>
-                        <a href="https://github.com/cnsheafe/StockWatcher" target="_blank">Repo</a>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <h4>
-                        Pomodoro Time
-                    </h4>
-                    <p>A MEAN stack app for increasing productivity using the Pomodoro Technique. </p>
-                    <div>
-                        <a href="https://pomodoro-time-keeper.herokuapp.com" target="_blank">Demo</a>
-                        <a href="https://github.com/cnsheafe/pomodoro-time" target="_blank">Repo</a>
-                    </div>
-
-                </div>
-                <div class="grid-item">
-                    <h4>
-                        MinTheatre
-                    </h4>
-                    <p>A minimalist viewing experience for searching and watching Youtube videos. Built with Vue-Vuex. Uses the Youtube Data and Youtube Iframe API via a separately built Node.js microservice. </p>
-                    <div>
-                        <a href="https://min-theatre.netlify.com" target="_blank">Demo</a>
-                        <a href="https://github.com/cnsheafe/min-theatre" target="_blank">Repo</a>
-                    </div>
-               </div>
-            </div>
-            <div class="gallery">
-                <h3>Gallery</h3>
-                <div>
+            <div class="project-item">
+                <div class="project-bio">
                     <h4>StockWatcher</h4>
-                    <a href="https://cnsheafe.github.io/StockWatcher-Client/" target="_blank">
-                        <img src="assets/stock.png" alt="Screenshot of StockWatcher displaying graph">
-                    </a>
+                    <p>A full-stack web app for setting SMS alerts on stocks. Built on ASP.NET Core, Postgres, and React-Redux.
+                        Uses Twilio and Alphavantage APIs.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://cnsheafe.github.io/StockWatcher-Client"
+                            target="_blank">Demo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/cnsheafe/StockWatcher"
+                            target="_blank">Repo
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <h4>Pomodoro Time</h4>
-                    <a href="https://pomodoro-time-keeper.herokuapp.com" target="_blank">
-                        <img src="assets/pomodoro.png" alt="Screenshot of Pomodoro timer counting down">
-                    </a>
-                </div>
-                <div>
-                    <h4>Spoon 'n Drop</h4>
-                    <a href="https://cnsheafe.github.io/spoon-n-drop/build/" target="_blank">
-                        <img src="assets/spoon.png" alt="Screenshot of Spoon 'n Drop displaying recipes">
-                    </a>
+                <div class="project-snapshot">
+                    <img src="assets/stock.png" alt="Graph of Microsoft Stock">
                 </div>
             </div>
+            <div class="project-item">
+                <div class="project-bio">
+                    <h4>MinTheatre</h4>
+                    <p>A minimalist viewing experience for searching and watching Youtube videos. Built with Vue-Vuex. Uses
+                        the Youtube Data and Youtube Iframe API via a separately built Node.js microservice.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://min-theatre.netlify.com" target="_blank">Demo</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/cnsheafe/min-theatre" target="_blank">Repo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-snapshot">
+                    <img src="assets/theatre.png" alt="Search Results for 'hello'">
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-bio">
+                    <h4>Pomodoro Time</h4>
+                    <p>A MEAN stack app for increasing productivity using the Pomodoro Technique. </p>
+                    <ul>
+                        <li>
+                            <a href="https://pomodoro-time-keeper.herokuapp.com" target="_blank">Demo</a>
+                        </li>
+                        <li>
+                            <a 
+                            href="https://github.com/cnsheafe/pomodoro-time" target="_blank">Repo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-snapshot">
+                    <img src="assets/pomodoro.png" alt="Timer running on Pomodoro">
+                </div>
 
+            </div>
         </section>
 
         <section id="contact" class="contact">
             <h2>Contact Info</h2>
             <div class="info">
                 <p>For opportunities, collaborations, or other inquiries contact me at: </p>
-                <p>Email: <span>cnsheafe@gmail.com</span></p>
-                <p>Github: <span>cnsheafe</span></p>
+                <p>Email:
+                    <span>cnsheafe@gmail.com</span>
+                </p>
+                <p>Github:
+                    <span>cnsheafe</span>
+                </p>
             </div>
         </section>
     </main>
