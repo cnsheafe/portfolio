@@ -1,15 +1,22 @@
 @import "colors";
 @import "fonts";
+
 header {
     position: relative;
     height: 100vh;
     font-family: $serif, serif;
+    background: url("assets/banner.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgba(#ffffff, 0.5);
+
+    z-index: 100;
+    overflow: hidden;
+
     h1,
     h2 {
         margin: 0;
     }
-    z-index: 100;
-    overflow: hidden;
+
     >div:last-child {
         font-family: $sans-serif, sans-serif;
         position: absolute;
@@ -19,21 +26,13 @@ header {
     }
 }
 
-header:before {
-    z-index: 95;
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: url("assets/banner.jpg");
-    opacity: 0.5;
-}
-
 .banner {
     z-index: 96;
     position: relative;
     top: 40px;
     width: 80%;
     margin: auto;
+
     h1,
     h2 {
         position: relative;
@@ -49,32 +48,39 @@ header:before {
             top: 10px;
         }
     }
+
     h1 {
         border-top: 4px solid black;
         border-left: 4px solid black;
         font-size: 38px;
         padding-top: 20px;
+
         @media screen and (min-width: 768px) {
             padding-top: 40px;
             border-width: 5px;
         }
+
         @media screen and (min-width: 992px) {
             padding-top: 80px;
         }
     }
+
     h2 {
         border-right: 4px solid black;
         border-bottom: 4px solid black;
         font-size: 30px;
         padding-bottom: 20px;
+
         @media screen and (min-width: 768px) {
             padding-bottom: 40px;
             border-width: 5px;
         }
+
         @media screen and (min-width: 992px) {
             padding-bottom: 80px;
         }
     }
+
     // For very small screens
     @media screen and (max-height: 480px) {
         top: 0;
@@ -97,6 +103,7 @@ header:before {
         opacity: 1;
         margin-right: 20px;
     }
+
     span {
         line-height: 150%;
     }
@@ -110,26 +117,28 @@ header:before {
     li:last-child {
         margin-right: 0;
     }
-    img {
-        width: 28px;
-    }
 
     i, img {
         font-size: 28px;
         vertical-align: bottom;
     }
-    i,img {
-        margin-right: 10px;
+
+    img {
+        width: 28px;
     }
+
     a {
         color: black;
         text-decoration: none;
+        text-align: center;
         opacity: 0.85;
         font-size: 18px;
     }
+
     a:hover {
         opacity: 1;
     }
+
     // For very small screens
     @media screen and (max-height: 480px) {
         margin-top: 30px;
@@ -140,6 +149,7 @@ header:before {
         margin-top: 20vh;
         flex-direction: column;
         justify-content: space-between;
+
         li {
             margin-bottom: 40px;
             margin-right: 0;
@@ -167,19 +177,24 @@ header:before {
         margin: auto;
         margin-top: 30vh;
         width: 90%;
+
         li {
             margin-right: 40px;
             line-height: 250%;
         }
+
         li:last-child {
             margin-right: 0;
         }
+
         i {
             font-size: 64px;
         }
+
         img {
             width: 60px;
         }
+
         a {
             font-size: 36px;
         }
@@ -194,9 +209,11 @@ header:before {
     0% {
         transform: translate(0px, 0px);
     }
+
     50% {
         transform: translate(0px, 25px);
     }
+
     75% {
         transform: translate(0px, 0px);
     }
@@ -210,12 +227,14 @@ header:before {
     opacity: 1;
     left: 50%;
     right: 50%;
+
     a {
         display: flex;
         justify-content: center;
         text-decoration: none;
         color: black;
     }
+
     i {
         font-size: 44px;
         @media screen and (min-width: 576px) {
@@ -242,6 +261,7 @@ header:before {
     padding-left: 0;
     justify-content: space-around;
     list-style: none;
+
     li {
         margin-right: 20px;
     }
