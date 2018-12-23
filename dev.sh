@@ -4,4 +4,4 @@
 # npm install -g sass serve
 
 # Execute "sass" and then fork a new process to start "serve"
-sass sass/main.scss docs/style.css --watch & serve docs
+sass sass/main.scss docs/style.css --watch --no-source-map & serve docs
