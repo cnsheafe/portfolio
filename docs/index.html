@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Chris Sheafe's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4="
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -15,143 +15,60 @@
 
 <body>
     <header>
-        <div role="banner" class="banner">
-            <h1>Christofer Sheafe</h1>
-            <h2>Software Developer Based in Denver, CO</h2>
-        </div>
-        <nav>
-            <ul id="links" class="navbar" role="navigation">
-                <li>
-                    <a id="link-about" href="#about">
-                        <i class="material-icons">person</i>
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="link-projects" href="#projects">
-                        <i class="material-icons">build</i>
-                        <span>Projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://github.com/cnsheafe" target="_blank">
-                        <img src="assets/github-mark.png" alt="Github Mark">
-                        <span>Github</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="link-contact" href="#contact">
-                        <i class="material-icons">contact_mail</i>
-                        <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div role="button" class="scroll-button">
-            <a href="#about">
-                <i class="material-icons">arrow_drop_down_circle</i>
-            </a>
-        </div>
-        <div role="note">Background:
-            <a href="https://www.vexels.com/vectors/preview/144775/winter-mountain-landscape-illustration" target="_blank">
-                Winter Mountain Landscape Illustration
-            </a>| Designed by Vexels</div>
-
+        <h1>Christofer Sheafe</h1>
+        <h2>Fullstack Web Developer who works primarily with React and Node.</h2>
+        <h3>Based in Denver, Colorado.</h3>
     </header>
 
     <main>
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <div role="separator">
-                <div role="textbox">
-                    <p>
-                        I am a frontend web developer with experience building SaaS projects using React, Node, and .NET.
-                    </p>
-                    <p>
-                        When I'm not writing software I like to cook, read, and play video games.
-                    </p>
-                </div>
+        <section id="work-experience">
+            <h1>Work Experience</h1>
+            <div id="charter">
+                <h2>Charter Communications</h2>
+                <h3>IP Spec Guide: Javascript Engineer</h3>
+                <h4>October 2018 - Present</h4>
+                <p>Creating an new and experimental cross-platform webapp for delivering video to existing Spectrum
+                    customers.</p>
+                <ul>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Scrum</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div id="fieldboom">
+                <h2>Fieldboom</h2>
+                <a
+                    href="https://fieldboom.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    https://fieldboom.com
+                </a>
+                <h3>Fieldboom Webapp: Frontend Web Developer</h3>
+                <h4>December 2018 - September 2018</h4>
+                <p>
+                    Created an lead-generation and feedback marketing tool for businesses small and large.
+                </p>
+                <ul>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>SASS</li>
+                    <li>Node/Loopback</li>
+                    <li>Git</li>
+                </ul>
             </div>
         </section>
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <div class="project-bio">
-                    <h4>StockWatcher</h4>
-                    <p>A full-stack web app for setting SMS alerts on stocks. Built on ASP.NET Core, Postgres, and
-                        React-Redux.
-                        Uses Twilio and Alphavantage APIs.
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="https://stock-watcher.netlify.com" target="_blank">Demo
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/cnsheafe/StockWatcher" target="_blank">Repo
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="project-snapshot">
-                    <img src="assets/stock.png" alt="Graph of Microsoft Stock">
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-bio">
-                    <h4>MinTheatre</h4>
-                    <p>A minimalist viewing experience for searching and watching Youtube videos. Built with Vue-Vuex.
-                        Uses
-                        the Youtube Data and Youtube Iframe API via a separately built Node.js microservice.
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="https://min-theatre.netlify.com" target="_blank">Demo</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/cnsheafe/min-theatre" target="_blank">Repo</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="project-snapshot">
-                    <img src="assets/theatre.png" alt="Search Results for 'hello'">
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-bio">
-                    <h4>Pomodoro Time</h4>
-                    <p>A MEAN stack app for increasing productivity using the Pomodoro Technique. </p>
-                    <ul>
-                        <li>
-                            <a href="https://pomodoro-time-keeper.herokuapp.com" target="_blank">Demo</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/cnsheafe/pomodoro-time" target="_blank">Repo</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="project-snapshot">
-                    <img src="assets/pomodoro.png" alt="Timer running on Pomodoro">
-                </div>
-
-            </div>
+        <section>
+            <h1>Projects</h1>
+            <ul>
+                <li>Stockwatcher</li>
+                <li>MinTheatre</li>
+                <li>PomodoroTime</li>
+            </ul>
         </section>
 
-        <section id="contact" class="contact">
-            <h2>Contact Info</h2>
-            <div class="info">
-                <p>For opportunities, collaborations, or other inquiries contact me at: </p>
-                <p>Email:
-                    <span>cnsheafe@gmail.com</span>
-                </p>
-                <p>Github:
-                    <span>cnsheafe</span>
-                </p>
-            </div>
-        </section>
     </main>
-
-    <script src="main.js"></script>
 </body>
 
 </html>
