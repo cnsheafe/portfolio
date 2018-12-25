@@ -1,0 +1,10 @@
+@import 'colors';
+
+@mixin round-buttons($padding: 14px 28px, $width: 100px) {
+    padding: $padding;
+    border-radius: 36px;
+    width: $width;
+    text-align: center;
+    background-color: $secondary-blue;
+    font-weight: 600;
+}
