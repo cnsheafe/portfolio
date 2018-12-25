@@ -17,6 +17,7 @@ header {
     > h1 {
         font-size: 48px;
         margin-top: 0;
+        color: $cyan-500;
     }
 
     > h2, h3 {
@@ -30,6 +31,7 @@ header {
     > h4 {
         font-size: 32px;
     }
+
 
     @media screen and (max-width: 600px) {
         > h1 {
@@ -68,12 +70,12 @@ header {
         text-align: center;
         background-color: $secondary-blue;
         text-decoration: none;
-        color: $bg-gray;
+        color: rgba($gray-50, 0.9);
         font-weight: 600;
         font-size: 18px;
 
         &:hover {
-            color: $font-white;
+            color: white;
         }
     }
 
@@ -92,4 +94,13 @@ header {
             border-radius: 32px;
         }
     }
+}
+
+.heart {
+    color: red;
+    padding: 0 4px;
+}
+
+.green {
+    color: $light-green-accent-400;
 }

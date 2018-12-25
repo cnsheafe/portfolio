@@ -14,6 +14,7 @@ header > h1, header h2, header h3, header h4 {
 header > h1 {
   font-size: 48px;
   margin-top: 0;
+  color: #00BCD4;
 }
 header > h2, header h3 {
   font-size: 36px;
@@ -57,12 +58,12 @@ header > h4 {
   text-align: center;
   background-color: #5294e2;
   text-decoration: none;
-  color: #404552;
+  color: rgba(250, 250, 250, 0.9);
   font-weight: 600;
   font-size: 18px;
 }
 .header-links a:hover {
-  color: #d3dae3;
+  color: white;
 }
 @media screen and (max-width: 600px) {
   .header-links > li {
@@ -78,9 +79,21 @@ header > h4 {
   }
 }
 
+.heart {
+  color: red;
+  padding: 0 4px;
+}
+
+.green {
+  color: #76FF03;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 10%;
-  scroll-behavior: smooth;
   font-family: "IBM Plex Serif", serif;
   background-color: #404552;
   color: #d3dae3;
@@ -102,5 +115,3 @@ h1, h2, h3, h4, h5, h6 {
 .hide {
   display: none;
 }
-
-/*# sourceMappingURL=style.css.map */

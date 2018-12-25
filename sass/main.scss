@@ -4,9 +4,12 @@
 @import 'contact';
 @import 'colors';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 10%;
-    scroll-behavior: smooth;
     font-family: 'IBM Plex Serif', serif;
     background-color: $bg-gray;
     color: $font-white;
