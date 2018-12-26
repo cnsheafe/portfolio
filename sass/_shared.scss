@@ -8,3 +8,79 @@
     background-color: $secondary-blue;
     font-weight: 600;
 }
+
+.carousel {
+    display: grid;
+    grid-template-areas:
+    'left-arrow image-list right-arrow'
+    '. subtitle .'
+    '. indicator .';
+    justify-items: center;
+
+    &__image-list {
+        grid-area: image-list;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+
+        li {
+            text-align: center;
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__left-arrow,
+    &__right-arrow, {
+        align-self: center;
+
+        > i {
+            font-size: 36px;
+            cursor: pointer;
+        }
+    }
+
+    &__left-arrow {
+        grid-area: left-arrow;
+        padding-right: 10px;
+
+        i {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__right-arrow {
+        grid-area: right-arrow;
+        padding-left: 10px;
+    }
+
+    &__subtitle {
+        grid-area: subtitle;
+        margin: 20px 0 10px 0;
+
+    }
+
+    &__indicator {
+        grid-area: indicator;
+        display: flex;
+        justify-content: center;
+
+        i {
+            color: $font-white; 
+            font-size: 16px;
+        }
+
+        .active {
+            i {
+                color: $secondary-blue;
+            }
+        }
+    }
+}

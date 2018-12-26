@@ -25,14 +25,75 @@ h1, h2, h3, h4, h5, h6 {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 .hide {
   display: none;
+}
+
+.carousel {
+  display: grid;
+  grid-template-areas: "left-arrow image-list right-arrow" ". subtitle ." ". indicator .";
+  justify-items: center;
+}
+.carousel__image-list {
+  grid-area: image-list;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+}
+.carousel__image-list li {
+  text-align: center;
+  display: none;
+}
+.carousel__image-list .active {
+  display: block;
+}
+.carousel__image-list img {
+  width: 100%;
+}
+.carousel__left-arrow, .carousel__right-arrow {
+  align-self: center;
+}
+.carousel__left-arrow > i, .carousel__right-arrow > i {
+  font-size: 36px;
+  cursor: pointer;
+}
+.carousel__left-arrow {
+  grid-area: left-arrow;
+  padding-right: 10px;
+}
+.carousel__left-arrow i {
+  transform: rotate(180deg);
+}
+.carousel__right-arrow {
+  grid-area: right-arrow;
+  padding-left: 10px;
+}
+.carousel__subtitle {
+  grid-area: subtitle;
+  margin: 20px 0 10px 0;
+}
+.carousel__indicator {
+  grid-area: indicator;
+  display: flex;
+  justify-content: center;
+}
+.carousel__indicator i {
+  color: #d3dae3;
+  font-size: 16px;
+}
+.carousel__indicator .active i {
+  color: #5294e2;
 }
 
 header {
@@ -124,6 +185,62 @@ header > h4 {
   color: #76FF03;
 }
 
+.carousel {
+  display: grid;
+  grid-template-areas: "left-arrow image-list right-arrow" ". subtitle ." ". indicator .";
+  justify-items: center;
+}
+.carousel__image-list {
+  grid-area: image-list;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+}
+.carousel__image-list li {
+  text-align: center;
+  display: none;
+}
+.carousel__image-list .active {
+  display: block;
+}
+.carousel__image-list img {
+  width: 100%;
+}
+.carousel__left-arrow, .carousel__right-arrow {
+  align-self: center;
+}
+.carousel__left-arrow > i, .carousel__right-arrow > i {
+  font-size: 36px;
+  cursor: pointer;
+}
+.carousel__left-arrow {
+  grid-area: left-arrow;
+  padding-right: 10px;
+}
+.carousel__left-arrow i {
+  transform: rotate(180deg);
+}
+.carousel__right-arrow {
+  grid-area: right-arrow;
+  padding-left: 10px;
+}
+.carousel__subtitle {
+  grid-area: subtitle;
+  margin: 20px 0 10px 0;
+}
+.carousel__indicator {
+  grid-area: indicator;
+  display: flex;
+  justify-content: center;
+}
+.carousel__indicator i {
+  color: #d3dae3;
+  font-size: 16px;
+}
+.carousel__indicator .active i {
+  color: #5294e2;
+}
+
 .experience > h1 {
   margin-top: 50px;
 }
@@ -133,12 +250,16 @@ header > h4 {
 .experience__job > h3, .experience__job h4 {
   margin-top: 10px;
 }
-.experience__job ul {
+.experience__job li:last-child {
+  margin-right: 0;
+}
+.experience__skills {
   display: flex;
   justify-content: space-between;
   width: 280px;
+  margin-top: 20px;
 }
-.experience__job li {
+.experience__skills li {
   padding: 10px 18px;
   border-radius: 36px;
   width: 125px;
@@ -146,10 +267,11 @@ header > h4 {
   background-color: #5294e2;
   font-weight: 600;
   margin-right: 20px;
-}
-.experience__job li:last-child {
-  margin-right: 0;
+  color: white;
 }
 .experience__link {
   font-size: 18px;
+}
+.experience .carousel {
+  margin-top: 30px;
 }
