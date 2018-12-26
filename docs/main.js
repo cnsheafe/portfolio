@@ -63,18 +63,14 @@ function changeActiveCarouselImage(index, job) {
   const subtitle = carousel.querySelector('.carousel__subtitle')
 
   liArray.forEach((li, i) => {
-    if (i === index) {
-      li.classList.add('active')
-    } else {
-      li.classList.remove('active')
-    }
-  })
+    const indicatorClassList = liIndicatorArray[i].classList
 
-  liIndicatorArray.forEach((li, i) => {
     if (i === index) {
       li.classList.add('active')
+      indicatorClassList.add('active')
     } else {
       li.classList.remove('active')
+      indicatorClassList.remove('active')
     }
   })
 
