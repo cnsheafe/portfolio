@@ -10,7 +10,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   body {
-    margin: 0 5%;
+    margin: 5% 5%;
   }
 }
 
@@ -42,8 +42,16 @@ p {
 
 .carousel {
   display: grid;
-  grid-template-areas: "left-arrow image-list right-arrow" ". subtitle ." ". indicator .";
+  grid-template-areas: "left-arrow image-list right-arrow" "subtitle subtitle subtitle" ". indicator .";
   justify-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  width: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .carousel {
+    width: 90%;
+  }
 }
 .carousel__image-list {
   grid-area: image-list;
@@ -60,12 +68,15 @@ p {
 }
 .carousel__image-list img {
   width: 100%;
+  cursor: pointer;
 }
 .carousel__left-arrow, .carousel__right-arrow {
   align-self: center;
+  outline: none;
 }
 .carousel__left-arrow > i, .carousel__right-arrow > i {
   font-size: 36px;
+  outline: none;
   cursor: pointer;
 }
 .carousel__left-arrow {
@@ -82,6 +93,7 @@ p {
 .carousel__subtitle {
   grid-area: subtitle;
   margin: 20px 0 10px 0;
+  text-align: center;
 }
 .carousel__indicator {
   grid-area: indicator;
@@ -101,7 +113,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 header > h1, header h2, header h3, header h4 {
@@ -125,6 +137,9 @@ header > h4 {
   font-size: 32px;
 }
 @media screen and (max-width: 600px) {
+  header > h2, header h3, header h4 {
+    margin-top: 25px;
+  }
   header > h1 {
     font-size: 42px;
   }
@@ -187,8 +202,16 @@ header > h4 {
 
 .carousel {
   display: grid;
-  grid-template-areas: "left-arrow image-list right-arrow" ". subtitle ." ". indicator .";
+  grid-template-areas: "left-arrow image-list right-arrow" "subtitle subtitle subtitle" ". indicator .";
   justify-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  width: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .carousel {
+    width: 90%;
+  }
 }
 .carousel__image-list {
   grid-area: image-list;
@@ -205,12 +228,15 @@ header > h4 {
 }
 .carousel__image-list img {
   width: 100%;
+  cursor: pointer;
 }
 .carousel__left-arrow, .carousel__right-arrow {
   align-self: center;
+  outline: none;
 }
 .carousel__left-arrow > i, .carousel__right-arrow > i {
   font-size: 36px;
+  outline: none;
   cursor: pointer;
 }
 .carousel__left-arrow {
@@ -227,6 +253,7 @@ header > h4 {
 .carousel__subtitle {
   grid-area: subtitle;
   margin: 20px 0 10px 0;
+  text-align: center;
 }
 .carousel__indicator {
   grid-area: indicator;
@@ -244,6 +271,11 @@ header > h4 {
 .experience > h1 {
   margin-top: 50px;
 }
+@media screen and (max-width: 600px) {
+  .experience > h1 {
+    text-align: center;
+  }
+}
 .experience__job {
   margin-top: 30px;
 }
@@ -255,19 +287,25 @@ header > h4 {
 }
 .experience__skills {
   display: flex;
-  justify-content: space-between;
-  width: 280px;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 .experience__skills li {
   padding: 10px 18px;
   border-radius: 36px;
-  width: 125px;
+  width: auto;
   text-align: center;
   background-color: #5294e2;
   font-weight: 600;
-  margin-right: 20px;
   color: white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .experience__skills li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }
 .experience__link {
   font-size: 18px;

@@ -5,6 +5,12 @@
         margin-top: 50px;
     }
 
+    @media screen and (max-width: 600px) {
+        > h1 {
+            text-align: center;
+        }
+    }
+
     &__job {
         margin-top: 30px;
 
@@ -20,14 +26,21 @@
 
     &__skills {
         display: flex;
-        justify-content: space-between;
-        width: 280px;
+        flex-wrap: wrap;
         margin-top: 20px;
 
         li {
-            @include round-buttons($padding: 10px 18px, $width: 125px); 
-            margin-right: 20px;
+            @include round-buttons($padding: 10px 18px, $width: auto); 
             color: white;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            li {
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
         }
     }
 
