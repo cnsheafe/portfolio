@@ -10,7 +10,6 @@ const state = {
   charter: {
     image: {
       index: 0,
-      showModal: false,
       subtitles: [
         'Channel guide for available programs.',
         'List of related assets for actor "Brad Pitt".',
@@ -20,6 +19,7 @@ const state = {
     carousel: charterElm.querySelector('.carousel'),
     carouselLeft: charterElm.querySelector('.carousel__left-arrow'),
     carouselRight: charterElm.querySelector('.carousel__right-arrow'),
+    carouselImageList: charterElm.querySelector('.carousel__image-list')
   },
   fieldboom: {
     image: {
@@ -30,6 +30,7 @@ const state = {
     carousel: fieldboomElm.querySelector('.carousel'),
     carouselLeft: fieldboomElm.querySelector('.carousel__left-arrow'),
     carouselRight: fieldboomElm.querySelector('.carousel__right-arrow'),
+    carouselImageList: fieldboomElm.querySelector('.carousel__image-list')
   },
 };
 
@@ -55,6 +56,17 @@ state.charter.carouselRight.addEventListener('click', (event) => {
 
   changeActiveCarouselImage(image.index, state.charter)
 })
+
+state.charter.carouselImageList.addEventListener('click', (event) => {
+  const { currentTarget } = event;
+
+  const activeImage = currentTarget.querySelector('.active > img')
+
+  // Show full res image
+  window.open(activeImage.src, '_blank')
+})
+
+
 
 function changeActiveCarouselImage(index, job) {
   const { carousel } = job
