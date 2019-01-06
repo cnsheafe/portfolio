@@ -6,14 +6,9 @@ html {
 }
 
 body {
-    margin: 0 10%;
-    font-family: 'IBM Plex Serif', serif;
+    display: grid;
+    grid-template-columns: 400px 1fr;
     background-color: $bg-gray;
-    color: $font-white;
-
-    @media screen and (max-width: 600px) {
-        margin: 5% 5%;
-    }
 }
 
 main {
@@ -48,5 +43,4 @@ p {
 @import 'header';
 @import 'about';
 @import 'projects';
-@import 'contact';
 @import 'experience';
