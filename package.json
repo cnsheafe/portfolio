@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cnsheafe/portfolio.git",
+  "author": "<cnsheafe@pm.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "elm": "^0.19.1-3"
+  }
+}
