@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #CDB380;
+}
+
+main {
+    position: relative;
+    width: 720px;
+    height: 100%;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 720px;
+    padding: 25px 0;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karma', serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+nav > a {
+    text-align: end;
+}
+
+h1 {
+    font-family: 'Karma', serif;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.greeting {
+    position: relative;
+    top: 340px;
+}
+

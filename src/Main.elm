@@ -2,6 +2,7 @@ module Main exposing (init, main, update, view)
 
 import Browser
 import Html exposing (Html, br, button, div, h1, text)
+import Html.Attributes exposing (class)
 import Html.Events exposing (onClick)
 
 
@@ -35,12 +36,22 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    Html.h1 []
-        [ text "Hi, I'm Chris!\n"
-        , br [] []
-        , text "Frontend Web Developer."
-        , br [] []
-        , text "React & Typescript Nerd."
-        , br [] []
-        , text "Current Obsession: Clojure & Elm."
+    Html.main_ []
+        [ Html.nav []
+            [ Html.a [] [ text "Home" ]
+            , Html.a [] [ text "About" ]
+            , Html.a [] [ text "Work Experience" ]
+            , Html.a [] [ text "Side Projects" ]
+            , Html.a [] [ text "Github" ]
+            , Html.a [] [ text "Contact" ]
+            ]
+        , Html.h1 [ class "greeting" ]
+            [ text "Hi, I'm Chris!\n"
+            , br [] []
+            , text "Frontend Web Developer."
+            , br [] []
+            , text "React & Typescript Nerd."
+            , br [] []
+            , text "Current Obsession: Clojure & Elm."
+            ]
         ]
